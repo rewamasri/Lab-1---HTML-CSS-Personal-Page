@@ -1,18 +1,103 @@
+/* resume */
 .top-heading {
-    color: rgb(164, 117, 240);
-    font-family: 'Times New Roman', Times, serif;
-    background-color: lightblue;
-    padding: 10px;
-    border-radius: 10px;
+  color: 		#425598;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f5d9e7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
 }
-.large-image{
-    max-width: 150px;
+.large-image {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
 }
-.small-image{
-    max-width: 50px;
- }
+.small-image {
+  max-width: 50px;
+}
 .background {
-    background-color: lightpink;
-    padding: 20px;
-    border-radius: 10px;
-}   
+  background-color: rgb(242,234,244);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*team*/
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.flex-item {
+  background-color: #FCE8E8;
+  padding: 15px;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+  font-size: 18px;
+}
+.animate {
+  position: relative;
+  animation: slideAcross 5s linear infinite;
+}
+
+@keyframes slideAcross {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -150px; /* adjust based on image width */
+  }
+}
+.form-container {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 200px;
+  border-radius: 10;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.rover-image{
+    max-width: 500px
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+/*nav*/
+.nav-bar {
+  background-color: #e0e9ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.nav-bar nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.custom-line {
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 20px 0;
+}

@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Lab1 - Resume Page</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab1 - Resume Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <nav>
+            <a href="resume.html">Resume</a>
+            <a href="team.html">Team Tech</a>
+        </nav>
+    </div>
     <div class="top-heading">
         <h1>Rewa El Masri</h1>
         <h2>Graduating Senior at the University of California, Riverside</h2>
     </div>
     <div class="background">
-        <img id="Personal Photo"
-        src="personal_photo.JPG" 
-        alt="Picture of self standing in front of the NASA meatball"
-        class="large-image"> 
-        <hr>
-         <h2>&#128214 Education</h2>
-         <ul>
-            <li><b>Bachelor's of Science in Computer Science</b> -- <em>University of California, Riverside</em> (2024-2026)</li>
+        <img id="Personal Photo" src="personal_photo.JPG" alt="Picture of self standing in front of the NASA meatball"
+            class="large-image">
+                <hr class="custom-line">
+        <h2>&#128214 Education</h2>
+        <ul>
+            <li><b>Bachelor's of Science in Computer Science</b> -- <em>University of California, Riverside</em>
+                (2024-2026)</li>
             <ul>
                 <li><b>GPA:</b> 3.38/4.0</li>
             </ul>
@@ -27,45 +34,62 @@
                 <li><b>GPA:</b> 3.4/4.0</li>
             </ul>
         </ul>
-        <hr>
-         <h2>&#128187 Work Experience</h2>
+        <hr class="custom-line">
+        <h2>&#128187 Work Experience</h2>
         <ul>
             <li><b>Software Test Automation Intern</b>, <em>NASA JPL</em> (July 2025 – September 2025)</li>
             <ul>
-                <li>Engineered Robot Framework based automated testing for Europa Clipper’s Ground Data System’s Automated
-                Telemetry Downlink (ATD), implementing subsystem health and aliveness checks as well as full end-to-end
-                uplink/downlink validation, reducing manual regression effort and increasing fault detection accuracy.</li>
-                <li>Developed reusable Robot Framework keywords and test suites to validate ATD’s interactions with subsystems (PADL,
-                AMPCS, PDPP, CFDP, SimCLTU, ULO), each with distinct interfaces and validation logic, improving coverage and
-                reliability of mission-critical ground operations.</li>
+                <li>Engineered Robot Framework based automated testing for Europa Clipper’s Ground Data System’s
+                    Automated
+                    Telemetry Downlink (ATD), implementing subsystem health and aliveness checks as well as full
+                    end-to-end
+                    uplink/downlink validation, reducing manual regression effort and increasing fault detection
+                    accuracy.</li>
+                <li>Developed reusable Robot Framework keywords and test suites to validate ATD’s interactions with
+                    subsystems (PADL,
+                    AMPCS, PDPP, CFDP, SimCLTU, ULO), each with distinct interfaces and validation logic, improving
+                    coverage and
+                    reliability of mission-critical ground operations.</li>
             </ul>
             <li><b>Team Tech Co-Lead</b>, <em>SWE @ UCR – Riverside, CA</em> (June 2025 – June 2026)</li>
             <ul>
-                <li>Leading a 15-member interdisciplinary team to design and deploy SOLARA, a solar-powered semi-autonomous rover
-                for sustainability research at UCR’s R’Garden, integrating robotics, edge computing, and cloud-style analytics for
-                precision agriculture.</li>
-                <li>Architecting a ROS 2–based robotic stack using Nav2 and SLAM for autonomous navigation, LiDAR mapping, and
-                waypoint planning, deployed on a Raspberry Pi 5 with a Pi Pico W handling real-time sensor interfacing (BME680,
-                MLX90640, BH1750, BNO055, GPS).</li>
-                <li>Designing a distributed data pipeline using MQTT (Mosquitto broker) for telemetry streaming, containerized with
-                Docker Compose on a Lenovo ThinkSystem SE350 edge server, where FastAPI microservices ingest data into Azure SQL
-                Edge and power machine learning models (K-Means clustering and Random Forest regression) for soil-climate
-                analytics and cross-season trend visualization.</li>
+                <li>Leading a 15-member interdisciplinary team to design and deploy SOLARA, a solar-powered
+                    semi-autonomous rover
+                    for sustainability research at UCR’s R’Garden, integrating robotics, edge computing, and cloud-style
+                    analytics for
+                    precision agriculture.</li>
+                <li>Architecting a ROS 2–based robotic stack using Nav2 and SLAM for autonomous navigation, LiDAR
+                    mapping, and
+                    waypoint planning, deployed on a Raspberry Pi 5 with a Pi Pico W handling real-time sensor
+                    interfacing (BME680,
+                    MLX90640, BH1750, BNO055, GPS).</li>
+                <li>Designing a distributed data pipeline using MQTT (Mosquitto broker) for telemetry streaming,
+                    containerized with
+                    Docker Compose on a Lenovo ThinkSystem SE350 edge server, where FastAPI microservices ingest data
+                    into Azure SQL
+                    Edge and power machine learning models (K-Means clustering and Random Forest regression) for
+                    soil-climate
+                    analytics and cross-season trend visualization.</li>
             </ul>
             <li><b>Boat CS Lead</b>, <em>SHPE @ UCR – Riverside, CA</em> (June 2025 – June 2026)</li>
             <ul>
-                <li>Engineering a bidirectional wireless telemetry system using Arduino GIGA and NRF24L01+PA+LNA modules to
-                transmit real-time voltage, current, GPS, and environmental data between the Solar Regatta boat and onshore base
-                station, enabling live monitoring and race-condition diagnostics.</li>
-                <li>Built and led implementation of two single-axis solar tracking systems that used lux sensor feedback to drive
-                actuator-based panel adjustments under dynamic race conditions.</li>
-                <li>Built and refined firmware that combined INA219, GPS, thermistors, and ambient light sensors, improving
-                communication reliability and power efficiency to ensure consistent telemetry during high-load race scenarios.</li>
-            </ul>  
+                <li>Engineering a bidirectional wireless telemetry system using Arduino GIGA and NRF24L01+PA+LNA modules
+                    to
+                    transmit real-time voltage, current, GPS, and environmental data between the Solar Regatta boat and
+                    onshore base
+                    station, enabling live monitoring and race-condition diagnostics.</li>
+                <li>Built and led implementation of two single-axis solar tracking systems that used lux sensor feedback
+                    to drive
+                    actuator-based panel adjustments under dynamic race conditions.</li>
+                <li>Built and refined firmware that combined INA219, GPS, thermistors, and ambient light sensors,
+                    improving
+                    communication reliability and power efficiency to ensure consistent telemetry during high-load race
+                    scenarios.</li>
+            </ul>
         </ul>
-        <hr>
-         <h2>&#128077 Skills</h2>
-         <ul>
+                <hr class="custom-line">
+        <h2>&#128077 Skills</h2>
+        <ul>
             <li><b>Languages:</b> </li>
             <ul>
                 <li>C++</li>
@@ -75,7 +99,7 @@
                 <li>R</li>
                 <li>HTML/CSS</li>
             </ul>
-                <!-- <li><b>Frameworks & Libraries:</b> </li>
+            <!-- <li><b>Frameworks & Libraries:</b> </li>
             <ul>
                 <li>ROS 2</li>
                 <li>Nav2</li>
@@ -100,7 +124,7 @@
                 <li>Docker Compose</li>
                 <li>REST APIs</li>
             </ul> -->
-                <li><b>Tools:</b> </li>
+            <li><b>Tools:</b> </li>
             <ul>
                 <li>Git/GitHub</li>
                 <li>VSCode</li>
@@ -115,13 +139,18 @@
                 <li>Google Test</li>
             </ul>
         </ul>
-        <hr>
-         <h2>&#128269 Subject Interests</h2>
-         <p>Embedded Systems: I like to work at the intersection of hardware and software to create efficient, real-time solutions.</p>
-         <p>Robotics & Autonomous Systems: I am interested in developing intelligent systems that can operate independently in various environments on a multidisciplinary level.</p>
-         <hr>
-         <h2>&#128433 Links</h2>
-         <a href="https://github.com/rewamasri" target="_blank"><img class="small-image" src="github_logo.png" alt="GitHub Logo"></a>
-        <a href="https://www.linkedin.com/in/rewamasri/" target="_blank"><img class="small-image" src="linkedin_logo.png" alt="LinkedIn Logo"></a>
-    </body>
+                <hr class="custom-line">
+        <h2>&#128269 Subject Interests</h2>
+        <p>Embedded Systems: I like to work at the intersection of hardware and software to create efficient, real-time
+            solutions.</p>
+        <p>Robotics & Autonomous Systems: I am interested in developing intelligent systems that can operate
+            independently in various environments on a multidisciplinary level.</p>
+                <hr class="custom-line">
+        <h2>&#128433 Links</h2>
+        <a href="https://github.com/rewamasri" target="_blank"><img class="small-image" src="github_logo.png"
+                alt="GitHub Logo"></a>
+        <a href="https://www.linkedin.com/in/rewamasri/" target="_blank"><img class="small-image"
+                src="linkedin_logo.png" alt="LinkedIn Logo"></a>
+</body>
+
 </html>
