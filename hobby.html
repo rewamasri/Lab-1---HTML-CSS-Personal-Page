@@ -1,90 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Team Tech</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        h2 {
-            text-align: center;
-        }
+      h2 {
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="nav-bar">
-        <nav>
-            <a href="index.html">Personal Page</a>
-            <a href="hobby.html">Hobby</a>
-        </nav>
+      <nav>
+        <a href="index.html">Personal Page</a>
+        <a href="hobby.html">Hobby</a>
+      </nav>
     </div>
 
-    <div class="top-heading" style = "text-align: center;">
-        <h1>Team Tech @ UCR</h1>
-        <h2>SWE Project – SOLARA Rover</h2>
+    <div class="top-heading" style="text-align: center">
+      <h1>Team Tech @ UCR</h1>
+      <h2>SWE Project – SOLARA Rover</h2>
     </div>
 
     <div class="background">
+      <img
+        src="img/rover.png"
+        alt="Team Tech Rover CAD Design"
+        class="rover-image animate"
+      />
 
-        <img src="img/rover.png" alt="Team Tech Rover CAD Design" class="rover-image animate">
+      <hr class="custom-line" />
 
-                <hr class="custom-line">
-
-        <h2>What We Do</h2>
-        <div class="flex-container">
-            <div class="flex-item">
-                <h3>Robotics</h3>
-                <p>Building a semi-autonomous rover using ROS2, Nav2, and SLAM.</p>
-            </div>
-            <div class="flex-item">
-                <h3>Data Systems</h3>
-                <p>Streaming telemetry with MQTT and processing with FastAPI + ML.</p>
-            </div>
-            <div class="flex-item">
-                <h3>Hardware</h3>
-                <p>Integrating sensors, GPS, LiDAR, and embedded systems.</p>
-            </div>
+      <h2>What We Do</h2>
+      <div class="flex-container">
+        <div class="flex-item">
+          <h3>Robotics</h3>
+          <p>Building a semi-autonomous rover using ROS2, Nav2, and SLAM.</p>
         </div>
-
-                <hr class="custom-line">
-
-        <h2>Come Support our Team and other BCOE Orgs</h2>
-        <video width="320" controls>
-            <source src="showcase.MP4" type="video/mp4" alt="Compilation video of all participating BCOE orgs showcasing their projects at Engineering Showcase 2025.">
-            Your browser does not support the video tag.
-        </video>
-
-                <hr class="custom-line">
-
-        <h2>Interested in Team Tech?</h2>
-        <div class="form-container">
-            <form action="/submit" method="POST">
-                <label>Name:</label><br>
-                <input type="text" label = "Full Name" name="name"><br><br>
-
-                <label>School Email:</label><br>
-                <input type="email" label="School Email" name="email"><br><br>
-
-                <label>Year:</label><br>
-                <select name="year" alt="Select Class Standing Year">
-                    <option>Freshman</option>
-                    <option>Sophomore</option>
-                    <option>Junior</option>
-                    <option>Senior</option>
-                </select><br><br>
-
-                <label>Subteam Interest:</label><br>
-                <input type="checkbox" name="interest" label="Robotics" value="Robotics"> Robotics<br>
-                <input type="checkbox" name="interest" label="Data Systems" value="Data Systems"> Data Systems<br>
-                <input type="checkbox" name="interest" label="Hardware" value="Hardware"> Hardware<br><br>
-
-                <input type="submit" value="Submit Interest Form">
-            </form>
+        <div class="flex-item">
+          <h3>Data Systems</h3>
+          <p>Streaming telemetry with MQTT and processing with FastAPI + ML.</p>
         </div>
+        <div class="flex-item">
+          <h3>Hardware</h3>
+          <p>Integrating sensors, GPS, LiDAR, and embedded systems.</p>
+        </div>
+      </div>
 
+      <hr class="custom-line" />
+
+      <h2>Come Support our Team and other BCOE Orgs</h2>
+      <video width="320" controls>
+        <source
+          src="showcase.MP4"
+          type="video/mp4"
+          alt="Compilation video of all participating BCOE orgs showcasing their projects at Engineering Showcase 2025."
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <hr class="custom-line" />
+
+      <h2>Interested in Team Tech?</h2>
+      <div class="form-container">
+        <form action="/submit" method="POST">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <label for="email">School Email:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="year">Year:</label><br />
+          <select id="year" name="year">
+            <option>Freshman</option>
+            <option>Sophomore</option>
+            <option>Junior</option>
+            <option>Senior</option></select
+          ><br /><br />
+
+          <fieldset>
+            <legend>Subteam Interest:</legend>
+
+            <input
+              type="checkbox"
+              id="robotics"
+              name="interest"
+              value="Robotics"
+            />
+            <label for="robotics">Robotics</label><br />
+
+            <input
+              type="checkbox"
+              id="data"
+              name="interest"
+              value="Data Systems"
+            />
+            <label for="data">Data Systems</label><br />
+
+            <input
+              type="checkbox"
+              id="hardware"
+              name="interest"
+              value="Hardware"
+            />
+            <label for="hardware">Hardware</label><br />
+          </fieldset>
+          <br />
+
+          <input type="submit" value="Submit Interest Form" />
+        </form>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
