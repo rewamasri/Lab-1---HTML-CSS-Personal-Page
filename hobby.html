@@ -61,13 +61,13 @@
         <div class="form-container">
             <form action="/submit" method="POST">
                 <label>Name:</label><br>
-                <input type="text" name="name"><br><br>
+                <input type="text" label = "Full Name" name="name"><br><br>
 
                 <label>School Email:</label><br>
-                <input type="email" name="email"><br><br>
+                <input type="email" label="School Email" name="email"><br><br>
 
                 <label>Year:</label><br>
-                <select name="year">
+                <select name="year" alt="Select Class Standing Year">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -75,9 +75,9 @@
                 </select><br><br>
 
                 <label>Subteam Interest:</label><br>
-                <input type="checkbox" name="interest" value="Robotics"> Robotics<br>
-                <input type="checkbox" name="interest" value="Data Systems"> Data Systems<br>
-                <input type="checkbox" name="interest" value="Hardware"> Hardware<br><br>
+                <input type="checkbox" name="interest" label="Robotics" value="Robotics"> Robotics<br>
+                <input type="checkbox" name="interest" label="Data Systems" value="Data Systems"> Data Systems<br>
+                <input type="checkbox" name="interest" label="Hardware" value="Hardware"> Hardware<br><br>
 
                 <input type="submit" value="Submit Interest Form">
             </form>
